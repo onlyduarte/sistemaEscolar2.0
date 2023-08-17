@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div id="central">
+
+        <form action="">
+
+        <label for="">Nome do aluno</label>
+        <input type="text" id="nome" required>
+
+        <label for="">Nota da primeira unidade</label>
+        <input type="number" id="nota1" class="nota" required>
+
+        <label for="">Nota da segunda unidade</label>
+        <input type="number" id="nota2" class="nota" required>
+
+        <label for="">Nota da terceira unidade</label>
+        <input type="number" id="nota3" class="nota" required>
+        <button id="calcular" class="btnOpenModal" onclick="openModal(), verificarNota()">Calcular</button>
+
+        </form>
+        <div class="modal-container">
+            <div class="modal">
+                <h2 id="saudacao"></h2>
+                <hr />
+                <span>
+                    <div id="resultado">
+                        <p></p>
+                    </div
+                    >
+                </span>
+                <hr />
+                <div class="btns">
+                    <button class="btnOK" onclick="closeModal()">OK</button>
+                    <button class="btnClose" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/js/js.js"></script>
+    <script src="/js/modal.js"></script>
+</body>
+</html>
